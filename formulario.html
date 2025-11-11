@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <h2>Formulario de Contacto</h2>
+
+    <form action="#" method="post">
+        <!-- Campo Nombre -->
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <!-- Campo Apellido -->
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+
+        <!-- Tipo de Identificación -->
+        <label for="tipo_id">Tipo de Identificación:</label><br>
+        <select id="tipo_id" name="tipo_id" required>
+            <option value="">Seleccione...</option>
+            <option value="CC">Cédula de Ciudadanía (CC)</option>
+            <option value="TI">Tarjeta de Identidad (TI)</option>
+            <option value="PA">Pasaporte (PA)</option>
+        </select><br><br>
+
+        <!-- Número de Identificación -->
+        <label for="numero_id">Número de Identificación:</label><br>
+        <input type="number" id="numero_id" name="numero_id" required><br><br>
+
+        <!-- Fecha de Nacimiento -->
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <!-- Número de Celular -->
+        <label for="celular">Número de Celular:</label><br>
+        <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" placeholder="Ej: 3001234567" required><br><br>
+
+        <!-- Política de Tratamiento de Datos -->
+        <input type="checkbox" id="politica" name="politica" required>
+        <label for="politica">Acepto la política de tratamiento de datos</label><br><br>
+
+        <!-- Botón Enviar -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
